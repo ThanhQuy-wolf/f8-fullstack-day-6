@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --text-color: #333;
+    --bg-color: #f8f9fa;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 40px 0;
+}
+
+.page-title {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc(33.333% - 20px);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--white);
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+}
+
+.product-item__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-item__info {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.product-item__name {
+    margin: 0 0 10px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #222;
+}
+
+.product-item__price {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--success-color);
+}
+
+.product-item__button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    margin-top: auto;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.product-item__button:hover {
+    background-color: #0056b3;
+}
