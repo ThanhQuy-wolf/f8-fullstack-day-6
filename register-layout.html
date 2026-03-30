@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Layout</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style-register-layout.css" />
+  </head>
+  <body>
+    <main class="register">
+      <section class="register__left" aria-label="Giới thiệu">
+        <div class="register__hero">
+          <div class="register__hero-badge">
+            <span aria-hidden="true">●</span>
+            <span>Tạo tài khoản mới</span>
+          </div>
+
+          <h1 class="register__hero-title">Bắt đầu nhanh, trải nghiệm mượt</h1>
+          <p class="register__hero-subtitle">
+            Đăng ký chỉ mất vài giây. Tất cả thông tin được bảo vệ, giao diện tối giản và dễ dùng trên mọi thiết bị.
+          </p>
+
+          <div class="register__hero-art" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="register__right" aria-label="Form đăng ký">
+        <div class="register__panel">
+          <header class="register__heading">
+            <h2 class="register__title">Đăng ký</h2>
+            <p class="register__desc">Điền thông tin bên dưới để tạo tài khoản.</p>
+          </header>
+
+          <form class="register__form" action="#" method="post" autocomplete="on">
+            <div class="register__field">
+              <label class="register__label" for="email">Email</label>
+              <input
+                class="register__input"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="username">Username</label>
+              <input
+                class="register__input"
+                id="username"
+                name="username"
+                type="text"
+                placeholder="your_username"
+                autocomplete="username"
+                minlength="3"
+                required
+              />
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="password">Password</label>
+              <input
+                class="register__input"
+                id="password"
+                name="password"
+                type="password"
+                placeholder="••••••••"
+                autocomplete="new-password"
+                minlength="6"
+                required
+              />
+            </div>
+
+            <div class="register__field">
+              <label class="register__label" for="confirm-password">Confirm Password</label>
+              <input
+                class="register__input"
+                id="confirm-password"
+                name="confirmPassword"
+                type="password"
+                placeholder="••••••••"
+                autocomplete="new-password"
+                minlength="6"
+                required
+              />
+            </div>
+
+            <div class="register__actions">
+              <button class="register__submit" type="submit">Tạo tài khoản</button>
+              <p class="register__meta">
+                Đã có tài khoản?
+                <a class="register__link" href="#" aria-label="Đi tới trang đăng nhập">Đăng nhập</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
